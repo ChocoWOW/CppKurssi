@@ -8,6 +8,7 @@
 
 int main()
 {
+    
     clock_t t1, t2;
     unsigned i, a;
     double val;

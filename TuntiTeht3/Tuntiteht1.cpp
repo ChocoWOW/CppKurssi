@@ -3,7 +3,13 @@
 #include <future>
 #include <numeric>
 
+
 // Funktio, joka laskee osataulukon summan
+
+std::mutex mtx;
+
+int total_sum = 0;
+
 long long sum_part(const std::vector<int>& data, size_t start, size_t end) {
     return std::accumulate(data.begin() + start, data.begin() + end, 0LL);
 }
